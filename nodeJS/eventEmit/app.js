@@ -28,14 +28,17 @@
 
 
 
-// let event = require('events');
+const EventEmitter = require('events'); // Import the EventEmitter class
 
-// let myEmitter = new event.EventEmitter(); //static 
+const myEmitter = new EventEmitter(); // Create an instance of EventEmitter
 
-// myEmitter.on("startW",function(){
+// Register an event listener for the 'startW' event
+myEmitter.on("startW", function() {
+    console.log("I am start working");
+});
 
-//     console.log("I am start working");
-// })
+// Emit the 'startW' event to trigger the listener
+myEmitter.emit("startW");
 
 // let i = 0;
 // setInterval(function(){
@@ -131,15 +134,15 @@
 
 //eventEmit Parameter
 
-let event = require('events');
-let myEmitter = new event.EventEmitter();
+// let event = require('events');
+// let myEmitter = new event.EventEmitter();
 
-// myEmitter.emit('donow');
+// // myEmitter.emit('donow');
 
-myEmitter.on('donow', function (val) {
-    console.log(`I am start working. ${val}`);
-});
+// myEmitter.on('donow', function (val) {
+//     console.log(`I am start working. ${val}`);
+// });
 
-// myEmitter.emit('donow');
+// // myEmitter.emit('donow');
 
-myEmitter.emit('donow', 'Brighter Myanmar');
+// myEmitter.emit('donow', 'Brighter Myanmar');
