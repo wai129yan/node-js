@@ -1,28 +1,23 @@
 let http = require('http');
 
 let routes = {
-    // "GET" : () => {
-    //     console.log("GET Method");
-    // },
-    // "POST": () => {
-    //     console.log("POST Method");
-    // } 
-
-    "GET" : {
-        "/" : () => console.log("Method GET and path /"),
-        "/home" : () => console.log("Method Get and path /home"),
-        "/home/about" : () => console.log("Method Get and Path /home/about")
+    "GET" : () => {
+        console.log("GET Method");
     },
+    "POST": () => {
+        console.log("POST Method");
+    } 
 
-    "POST":{
-        "/new" : () => console.log("Method Post and Path /new"),
-        "/new/data" : () => console.log("Method Post and Path /new/data")
-    }
+    // "GET" : {
+    //     "/" : () => console.log("Method GET and path /"),
+    //     "/home" : () => console.log("Method Get and path /home"),
+    //     "/home/about" : () => console.log("Method Get and Path /home/about")
+    // },
 
-
-
-
-
+    // "POST":{
+    //     "/new" : () => console.log("Method Post and Path /new"),
+    //     "/new/data" : () => console.log("Method Post and Path /new/data")
+    // }
 
 
 }
