@@ -1,0 +1,21 @@
+
+
+// node package => npm init -y
+//node server   => npm install express --save / -D
+    - Build ExpressJS Application
+
+
+    - console.log(clear) //delete the old data
+
+
+
+⁂⁂　Client Request =>  Server -> Processing  =====  Response  => Client
+
+
+1 - Get 
+    Post
+    Patch
+    Delete
+ => Put 
+ 
+2 - RestFul Requests
